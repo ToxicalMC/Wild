@@ -1,0 +1,11 @@
+name: Wild
+author: Syntaxious
+
+main: Wild\Main
+api: [2.0.0]
+version: 0.0.1_BETA
+
+commands:
+ wild:
+  usage: /wild 
+  description: Teleports you to the Wilderness!
