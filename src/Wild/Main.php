@@ -1,5 +1,7 @@
 <?php
+
 namespace Wild;
+
 use pocketmine\plugin\PluginBase;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
@@ -9,6 +11,7 @@ use pocketmine\{Server,Player};
 use pocketmine\utils\TextFormat as C;
 use pocketmine\event\entity\EntityDamageEvent;
 class Main extends PluginBase {
+    
     public $iswildin = [];
     
     public function onEnable(){
@@ -17,6 +20,7 @@ class Main extends PluginBase {
     public function onDisable(){
               $this->getLogger()->info(C::RED . "Disabling Wild Plugin.");
     }
+    
     public function onCommand(CommandSender $s, Command $cmd, $label, array $args){
     if(strtolower($cmd->getName() == "wild")){
         if($s->hasPermission("wild.command")){
