@@ -45,7 +45,7 @@ class Main extends PluginBase {
        if($event->getEntity() instanceof Player){
            if(isset($this->iswildin[$event->getEntity->getName()])){
                $p = $event->getEntity();
-               unset($this->iswildin[$p->getName()];
+               unset($this->iswildin[$p->getName()]);
                      $event->setCancelled();
            }
        }
