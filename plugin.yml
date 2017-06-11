@@ -2,7 +2,7 @@ name: Wild
 author: Syntaxious + Pogogo007
 
 main: Wild\Main
-api: [2.0.0]
+api: [3.0.0-ALPHA5]
 version: 0.0.1_BETA
 
 commands:
